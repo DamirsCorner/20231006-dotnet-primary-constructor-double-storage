@@ -5,6 +5,6 @@ public class User(string username)
 
     public override string ToString()
     {
-        return username;
+        return Username;
     }
 }

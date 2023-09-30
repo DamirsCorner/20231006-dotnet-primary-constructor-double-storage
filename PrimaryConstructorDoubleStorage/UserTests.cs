@@ -5,11 +5,11 @@ namespace PrimaryConstructorDoubleStorage;
 public class UserTests
 {
     [Test]
-    public void PropertyAndParameterValueCanDiverge()
+    public void ParameterValueIsOnlyStoredInTheProperty()
     {
         var user = new User("damir");
         user.Username = "damira";
 
-        user.Username.Should().NotBe(user.ToString());
+        user.Username.Should().Be(user.ToString());
     }
 }
